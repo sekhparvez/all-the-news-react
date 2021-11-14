@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import Nav from './Nav';
+import Header from './header';
+import Loading from './loading';
+import Nav from './nav';
 import Stories from './Stories';
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
@@ -47,7 +48,7 @@ function App() {
       <Nav navItems={navItems} setSection = {setSection} section={section}></Nav>
       {
         loading || stories.length === 0 ? (
-          <h2>Loading...</h2>
+          <Loading></Loading>
         ) : <Stories stories={stories} section={section} />
 
       }

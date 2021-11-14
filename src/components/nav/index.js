@@ -1,12 +1,15 @@
 import React from "react";
-import NavItem from "./NavItem";
+import NavItem from "../NavItem";
+import {Navigator} from "./styles";
 
-  const Nav = (props) => {
+
+
+  const Nav = ({navItems, setSection, section}) => {
     const svgStyles = {
       fill: "white",
     };
   return (
-    <nav>
+    <Navigator>
       <ul>
       <li className="logo">
           <a href="#top">
@@ -17,16 +20,16 @@ import NavItem from "./NavItem";
 />
           </a>
           </li>
-        {props.navItems.map((navItem, index) => (
+        {navItems.map((navItem, index) => (
           <NavItem
             key={index}
             navItem={navItem}
-            setSection={props.setSection}
-            section = {props.section}
+            setSection={setSection}
+            section = {section}
           />
         ))}
       </ul>
-    </nav>
+    </Navigator>
   );
 };
 

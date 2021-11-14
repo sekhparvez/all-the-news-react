@@ -36,38 +36,38 @@ html {
     "entry entry";
 }
 
-header {
+/* header {
   height: 320px;
   background: url(../img/img.jpg) center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 h1 {
   font-family: "Lobster", cursive;
   font-weight: normal;
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   header {
     height: 120px;
   }
-}
+} */
 
 p {
   margin: 1rem 0;
 }
-
+/* 
 h1 {
   color: white;
   font-size: 7vw;
   font-weight: 400;
   text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
-nav {
+/* nav {
   background: #007eb6;
   width: 100%;
   transition: all 0.5s;
@@ -100,7 +100,7 @@ nav a:not(.active):hover {
   box-shadow: inset 0 0 0 2px white;
   border-radius: 6px;
   background-color: #00aeef;
-}
+} */
 
 img {
   width: 100%;
