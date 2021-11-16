@@ -5,7 +5,8 @@ import Nav from './nav';
 import Stories from './Stories';
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
-const nytapi = 'gLXaEYxlWPv5qcfDC3k61pDIQAId9wlm'
+// 
+const nytapi = process.env.NYTAPI
 // const section = 'arts';
 
 
@@ -47,8 +48,8 @@ function App() {
       <Header siteTitle = "All the News that Fits We Print" />
       <Nav navItems={navItems} setSection = {setSection} section={section}></Nav>
       {
-        loading || stories.length === 0 ? (
-          <Loading></Loading>
+        loading  ? (
+          <Loading>Load</Loading>
         ) : <Stories stories={stories} section={section} />
 
       }
