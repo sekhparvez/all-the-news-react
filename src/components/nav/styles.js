@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
 export const Navigator = styled.nav`
-nav {
+
   background: #007eb6;
   width: 100%;
   transition: all 0.5s;
   position: sticky;
   top: 0;
-}
 
-nav ul {
+
+ ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-nav a {
+ a {
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -25,12 +25,12 @@ nav a {
   padding: 0.75rem 1.5rem;
 }
 
-nav a.active {
+ a.active {
   box-shadow: inset 0 0 0 2px white;
   border-radius: 6px;
 }
 
-nav a:not(.active):hover {
+ a:not(.active):hover {
   box-shadow: inset 0 0 0 2px white;
   border-radius: 6px;
   background-color: #00aeef;

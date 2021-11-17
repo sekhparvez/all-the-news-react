@@ -2,7 +2,7 @@ import styled from "styled-components"
 export const Load = styled.div`
 .loading {
   position: absolute;
-  top: 0;
+  top: 150px;
   width: 100vw;
   height: 100vh;
   display: flex;

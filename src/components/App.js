@@ -6,7 +6,7 @@ import Stories from './Stories';
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
 // 
-const nytapi = process.env.NYTAPI
+const nytapi = process.env.NYTAPI || '1bHTOfYGenLg5EJbDJUNSjqwm6TK5fft'
 // const section = 'arts';
 
 
@@ -19,9 +19,9 @@ function App() {
     const url = new URL(window.location.href);
     const hash = url.hash.slice(1);
     if (hash !== "undefined") {
-      console.log(" hash ", hash);
-      setSection(hash);
-    } else {
+    //   console.log(" hash ", hash);
+    //   setSection(hash);
+    // } else {
       setSection("arts");
     }
   }, []);
@@ -36,6 +36,7 @@ function App() {
       .then(setLoading(false))
       .catch((error) => {
         console.log(error);
+        setLoading(false);
       });
   }, [section]);
     
